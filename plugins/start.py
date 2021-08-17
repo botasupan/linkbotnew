@@ -76,7 +76,7 @@ async def start_command(client: Client, message: Message):
                     InlineKeyboardButton("🔥 ᴏᴘᴇɴ", callback_data = "about"),
                     InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close")
                 ],[
-                    InlineKeyboardButton("ᴠɪᴅᴇᴏ ᴠɪʀᴀʟ", url="https://t.me/asupanindoviraals")
+                    InlineKeyboardButton("ᴠɪᴅᴇᴏ ᴠɪʀᴀʟ", url="https://t.me/bokepviralindoneisa_terbaru")
                   ]
             ]
         )
@@ -104,6 +104,7 @@ async def not_joined(client: Client, message: Message):
     except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel", url = client.invitelink)]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel", url ='https://t.me/{client.username}?start={argument}')]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
