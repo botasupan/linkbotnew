@@ -104,7 +104,6 @@ async def not_joined(client: Client, message: Message):
     except ValueError:
         pass
     return
-    else:
     reply_markup = InlineKeyboardMarkup(
             [
                 [
