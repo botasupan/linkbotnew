@@ -73,10 +73,10 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔥 ᴏᴘᴇɴ", callback_data = "about"),
-                    InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close")
+                    InlineKeyboardButton("🔑 𝗢𝗣𝗘𝗡", callback_data = "about"),
+                    InlineKeyboardButton("🔒 𝗖𝗟𝗢𝗦𝗘", callback_data = "close")
                 ],[
-                    InlineKeyboardButton("ᴠɪᴅᴇᴏ ᴠɪʀᴀʟ", url="https://t.me/bokepviralindonesia_terbaru")
+                    InlineKeyboardButton("📥 𝐕𝐈𝐃𝐄𝐎 𝐕𝐈𝐑𝐀𝐋", url="https://t.me/bokepviralindonesia_terbaru")
                   ]
             ]
         )
@@ -96,19 +96,19 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>AKSES ANDA DI TOLAK !!\nWajib join channel/group dibawah ini agar akses diterima\n\nJoin Klik Di Bawah Ini</b>"
+    text = "<b>Anda harus JOIN Channel/Group terlebih dahulu untuk menggunakan BOT ini.\n\nKalau belum JOIN, BOT tidak akan menampilkan Video. Jika sudah JOIN, silahkan klik GET FILE</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
-        text = text + f" <b>dan <a href='https://t.me/{client.username}?start={argument}'>coba lagi</a></b>"
+        text = text + f"<a href='https://t.me/{client.username}?start={argument}'></a>"
     except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Channel", url = client.invitelink),
+                    InlineKeyboardButton("🔞 JOIN HERE 🔞", url = client.invitelink),
                 ],[
-                    InlineKeyboardButton("GET FILE", url = f'https://t.me/{client.username}?start={argument}')
+                    InlineKeyboardButton("🔄 GET FILE", url = f'https://t.me/{client.username}?start={argument}')
                   ]
             ]
         )
