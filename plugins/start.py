@@ -103,7 +103,6 @@ async def not_joined(client: Client, message: Message):
         text = text + f" <b>dan <a href='https://t.me/{client.username}?start={argument}'>coba lagi</a></b>"
     except ValueError:
         pass
-    return
     reply_markup = InlineKeyboardMarkup(
             [
                 [
