@@ -106,6 +106,9 @@ async def not_joined(client: Client, message: Message):
     reply_markup = InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("TUTORIAL PAKAI BOT INI", url = 'https://t.me/AsupanNaughty'),
+                ],
+                [
                     InlineKeyboardButton("🔞 JOIN HERE 🔞", url = client.invitelink),
                 ],[
                     InlineKeyboardButton("🔄 GET FILE", url = f'https://t.me/{client.username}?start={argument}')
