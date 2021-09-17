@@ -96,7 +96,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>Anda harus JOIN Channel/Group terlebih dahulu untuk menggunakan BOT ini.\n\nKalau belum JOIN, BOT tidak akan menampilkan Video. Jika sudah JOIN, silahkan klik GET FILE</b>"
+    text = "<b>Anda harus JOIN Channel/Group terlebih dahulu untuk menggunakan BOT ini.\n\nKalau belum JOIN, BOT tidak akan menampilkan Video. Jika sudah JOIN, silahkan klik GET FILE\n\nKLIK TUTORIAL PAKAI BOT INI untuk menggunakan BOT ini</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
@@ -106,7 +106,7 @@ async def not_joined(client: Client, message: Message):
     reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("TUTORIAL PAKAI BOT INI", url = 'https://t.me/AsupanNaughty'),
+                    InlineKeyboardButton("TUTORIAL PAKAI BOT INI", url = 'https://t.me/FileSaverGoBot?start=AgADFAUAAlwcIVY'),
                 ],
                 [
                     InlineKeyboardButton("🔞 JOIN HERE 🔞", url = client.invitelink),
