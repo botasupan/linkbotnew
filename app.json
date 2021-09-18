@@ -36,7 +36,7 @@
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+      "value": "Hello {first}\n\nSaya dapat membuat file video anda menjadi sebuah link.\n\nCreated by : @nicogabisadesah\nSupported by : @Channel_Cuan"
     },
     "ADMINS": {
       "description": "A space separated list of user_ids of Admins, they can only create links",
