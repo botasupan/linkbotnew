@@ -1,4 +1,4 @@
-<h1 align="center"> THUAK BOT
+<h1 align="center"> NICO BOT
 
 <p align="center"> -
 <p align="center">
